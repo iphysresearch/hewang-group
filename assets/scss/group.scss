@@ -126,6 +126,22 @@ a:hover { color: var(--site-accent-hover); text-decoration: underline; }
 .direction h3 { font-size: 1rem; margin: 0 0 4px; }
 .direction p { margin: 0; color: var(--site-muted); font-size: 0.92rem; }
 
+.direction__items { list-style: none; margin: 6px 0 0; padding: 0; }
+.direction__items li { color: var(--site-muted); font-size: 0.9rem; padding: 2px 0 2px 14px; position: relative; }
+.direction__items li::before { content: "·"; position: absolute; left: 0; color: var(--site-accent); font-weight: 700; }
+
+.undergrad { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--site-line); max-width: var(--site-reading); }
+.undergrad__label { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--site-muted); font-weight: 650; }
+.undergrad p { margin: 6px 0 6px; color: var(--site-muted); font-size: 0.92rem; }
+.undergrad__link { font-size: 0.9rem; }
+
+.join-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; margin-top: 6px; }
+.join-col h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--site-muted); margin: 0 0 8px; font-weight: 650; }
+.tick { list-style: none; margin: 0; padding: 0; }
+.tick li { font-size: 0.9rem; color: var(--site-ink); padding: 3px 0 3px 16px; position: relative; }
+.tick li::before { content: "✓"; position: absolute; left: 0; color: var(--site-accent); font-size: 0.8rem; }
+.join__note { max-width: var(--site-reading); margin: 22px 0 0; color: var(--site-muted); font-size: 0.9rem; }
+
 .pub-list { list-style: none; margin: 0; padding: 0; }
 .pub-list li { padding: 9px 0; border-top: 1px solid var(--site-line); }
 .pub-list li:first-child { border-top: 0; }

@@ -13,8 +13,9 @@ role_undergrad: 本科生
 role_visiting: 短期访问
 role_joint: 联合培养
 
-research_intro: "四个方向，都扎根于引力波的观测数据。"
-papers_heading: 代表性论文
-
-join_text: "欢迎对引力波数据分析、机器学习或科学智能感兴趣的同学与我联系。大多项目从一个数据集和一个能被检验的问题开始。"
-join_write: "来信请简单说明你对哪个方向感兴趣，以及你实际做过什么——课程项目、复现，或者一个别人放弃的 notebook。"
+join_text: "欢迎对引力波数据分析、机器学习或科学智能感兴趣的同学申请。特别欢迎编程能力强、学习主动性高、自驱力强的申请人。"
+join_majors_heading: 专业背景
+join_stages_heading: 申请阶段
+join_skills_heading: 基础能力
+join_commit_heading: 参与方式
+join_note: "参考资料大多是英文的，判断该读什么、该用哪个工具，本身就是训练的一部分。希望你能自己在 GitHub、Baidu、Google 上找到相关资源，并快速吸收、为我所用；遇到困难时，也建议先向 LLM 求助。"

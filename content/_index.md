@@ -1,32 +1,69 @@
 ---
 title: He Wang's Group
 hero_title: "Gravitational waves, machine learning, and AI for science"
-hero_text: "We work on how to detect gravitational waves, recover their signals, and infer the physics behind them — and on what language models and agents can and cannot do in that process."
-directions:
-  - title: Signal detection
-    text: "Identifying gravitational-wave candidates in noisy data while keeping false alarms under control, in real LIGO observations and simulated space-based data."
-  - title: Denoising and reconstruction
-    text: "Recovering signals when detector noise changes over time, and being honest about what that costs in parameter accuracy."
-  - title: Parameter inference
-    text: "Recovering physical parameters quickly enough to be useful and carefully enough to be trusted, including with overlapping signals."
-  - title: AI for scientific discovery
-    text: "What language models and agents actually contribute to research, and where they fail quietly."
-papers:
-  - title: "Rapid Multiparameter Gravitational-Wave Tests of General Relativity with Neural Posterior Estimation"
-    authors: "H. Su, T. Yang, H. Wang"
-    venue: "arXiv:2611.17038 (2026)"
-    arxiv: "2611.17038"
-  - title: "Learning Instrumental Noise Profiles in Signal-Confusion Scenarios for Space-Based Gravitational-Wave Detectors"
-    authors: "D. Zhang, H. Wang"
-    venue: "RAA (2026)"
-  - title: "Source confusion of massive black-hole binaries for the Taiji mission"
-    authors: "Q. Diao et al., H. Wang"
-    venue: "Phys. Rev. D 113, 123057 (2026)"
-    arxiv: "2504.09679"
-  - title: "Automated Algorithmic Discovery through LLM-Guided Evolutionary Search"
-    authors: "H. Wang, L. Zeng"
-    venue: "arXiv:2508.03661 (2025)"
-    arxiv: "2508.03661"
+hero_text: "We work at the intersection of gravitational-wave science and AI for Science — on how to detect signals, how to infer the physics behind them, and on what intelligent algorithms can and cannot do in that process."
+research_intro: "The work spans gravitational-wave science, machine learning, intelligent algorithms and scientific computing. Concrete topics include, but are not limited to:"
+research:
+  - title: Gravitational-wave science and physical modelling
+    items:
+      - Gravitational-wave data analysis
+      - Multi-messenger data processing
+      - Numerical relativity and waveform modelling
+      - Numerical solution of partial differential equations
+      - Scientific simulation and physical modelling
+  - title: Artificial intelligence and scientific computing
+    items:
+      - Machine learning on scientific data (AI for Science)
+      - Deep learning for time-series signals
+      - Generative models (flow and diffusion models)
+      - Physics-informed neural networks (PINN)
+      - Operator learning (DeepONet, neural operators)
+      - Simulation-based inference
+      - Probabilistic inference and Bayesian analysis
+  - title: New intelligent algorithms
+    items:
+      - Large language models in research automation
+      - AI agents and automated research systems
+      - Evolutionary optimisation and heuristic search
+      - AutoML and automatic design of scientific models
+  - title: Scientific computing and engineering
+    items:
+      - Digital signal processing
+      - High-performance computing
+      - GPU parallel computing and scientific software
+      - Scientific software engineering
+  - title: Emerging directions
+    items:
+      - Quantum computing for scientific computation
+      - Complex-system data analysis
+      - Quantitative analysis and scientific data modelling
+undergrad:
+  label: "Undergraduate research programme"
+  url: "https://github.com/iphysresearch/UndergradResearchLab/"
+  text: "The lab also runs an undergraduate training programme — the Taiji Lab initiative at UCAS — for students who want to start on real data before graduate school."
+join_majors:
+  - Physics / Astronomy
+  - Computer science
+  - Software engineering
+  - Artificial intelligence
+  - Electronic and communication engineering
+  - Automation / control science
+  - Mathematics / applied mathematics / statistics
+  - Quantum information / quantum computing
+  - Data science
+join_stages:
+  - Undergraduates (any year; second and third year preferred)
+  - Master's and PhD students
+  - High-school students with strong programming
+join_skills:
+  - Solid mathematics: linear algebra, probability and statistics, calculus
+  - Python / Linux / scientific computing, or the willingness to learn them
+  - Ability to read English literature
+join_commit:
+  - Continuous involvement in research training for the duration of the project
+  - At least half a day per week for remote discussion or study
+  - Time at UCAS during winter and summer breaks for hands-on work
+  - A research report or project summary at the end
 join_email: "wanghe@ucas.ac.cn"
 ---
 

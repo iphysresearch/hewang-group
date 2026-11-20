@@ -27,9 +27,7 @@
                 <span class="member__sep">·</span>
                 <span class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</span>
                 {{ with .period }}<span class="member__sep">·</span><span class="member__period">{{ . }}</span>{{ end }}
-                {{ with .links }}
-                  {{ range . }}<a class="member__link" href="{{ .url }}">{{ .name }}</a>{{ end }}
-                {{ end }}
+                {{ with .links }}{{ range . }}<a class="member__link" href="{{ .url }}">{{ .name }}</a>{{ end }}{{ end }}
               </div>
               <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
               {{ with .pubs }}
@@ -71,26 +69,24 @@
 <section class="section" id="research">
   <div class="wrap">
     <h2>{{ i18n "research" }}</h2>
-    <p class="section__intro">{{ i18n "research_intro" }}</p>
+    <p class="section__intro">{{ .Params.research_intro }}</p>
     <div class="directions">
-      {{ range .Params.directions }}
+      {{ range .Params.research }}
         <div class="direction">
           <h3>{{ .title }}</h3>
-          <p>{{ .text }}</p>
+          <ul class="direction__items">
+            {{ range .items }}<li>{{ . }}</li>{{ end }}
+          </ul>
         </div>
       {{ end }}
     </div>
 
-    {{ with .Params.papers }}
-      <h3 class="sub-head">{{ i18n "papers_heading" }}</h3>
-      <ul class="pub-list">
-        {{ range . }}
-          <li>
-            <span class="pub-title">{{ .title }}</span>
-            <span class="pub-meta">{{ .authors }} · {{ .venue }}{{ with .arxiv }} · <a href="https://arxiv.org/abs/{{ . }}">arXiv:{{ . }}</a>{{ end }}</span>
-          </li>
-        {{ end }}
-      </ul>
+    {{ with .Params.undergrad }}
+      <div class="undergrad">
+        <span class="undergrad__label">{{ .label }}</span>
+        <p>{{ .text }}</p>
+        <a class="undergrad__link" href="{{ .url }}">{{ .url }} →</a>
+      </div>
     {{ end }}
   </div>
 </section>
@@ -98,13 +94,31 @@
 <section class="section" id="join">
   <div class="wrap">
     <h2>{{ i18n "join" }}</h2>
-    <div class="join">
-      <p>{{ i18n "join_text" }}</p>
-      <p>{{ i18n "join_write" }}</p>
-      {{ with .Params.join_email }}
-        <p class="join__email"><a href="mailto:{{ . }}">{{ . }}</a></p>
-      {{ end }}
+    <p class="section__intro">{{ i18n "join_text" }}</p>
+
+    <div class="join-grid">
+      <div class="join-col">
+        <h3>{{ i18n "join_majors_heading" }}</h3>
+        <ul class="tick">{{ range .Params.join_majors }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      <div class="join-col">
+        <h3>{{ i18n "join_stages_heading" }}</h3>
+        <ul class="tick">{{ range .Params.join_stages }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      <div class="join-col">
+        <h3>{{ i18n "join_skills_heading" }}</h3>
+        <ul class="tick">{{ range .Params.join_skills }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      <div class="join-col">
+        <h3>{{ i18n "join_commit_heading" }}</h3>
+        <ul class="tick">{{ range .Params.join_commit }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
     </div>
+
+    <p class="join__note">{{ i18n "join_note" }}</p>
+    {{ with .Params.join_email }}
+      <p class="join__email"><a href="mailto:{{ . }}">{{ . }}</a></p>
+    {{ end }}
   </div>
 </section>
 {{ end }}

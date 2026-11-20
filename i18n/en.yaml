@@ -13,8 +13,9 @@ role_undergrad: Undergraduate
 role_visiting: Visiting student
 role_joint: Joint training
 
-research_intro: "Four strands, all of them grounded in gravitational-wave observations."
-papers_heading: Selected publications
-
-join_text: "I am always happy to hear from students who want to work on gravitational-wave data analysis, machine learning, or AI for science. Most projects start with a dataset and a question that a test can settle."
-join_write: "Write with a short note on which direction draws you and what you have already tried — a course project, a reproduction, a notebook."
+join_text: "I welcome applications from students who want to work on gravitational-wave data analysis, machine learning, or AI for science. Strong programmers, self-starters and self-directed learners are especially welcome."
+join_majors_heading: Backgrounds
+join_stages_heading: Stage
+join_skills_heading: What you need
+join_commit_heading: What it involves
+join_note: "Most of the material you will need is in English, and working out what to read and which tool to use is part of the training. I expect you to find your own references — on GitHub, Baidu or Google — and to make them yours quickly. Ask an LLM when you are stuck."
