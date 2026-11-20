@@ -37,7 +37,7 @@
       venue: "arXiv:2610.31044"
       url: "https://arxiv.org/abs/2610.31044"
 
-- name: {en: "Jian-Nan Zhang", zh: "张加楠"}
+- name: {en: "Jianan Zhang", zh: "张加楠"}
   since: "2025"
   status: current
   affiliation:
@@ -47,7 +47,7 @@
     en: "Galactic-binary foreground search for space-based detectors: global fit and machine-learning methods."
     zh: "空间引力波探测中的银河系双星前景搜索：全局拟合与机器学习方法。"
 
-- name: {en: "Ding-Kai Zhang", zh: "张丁锴"}
+- name: {en: "Dingkai Zhang", zh: "张丁锴"}
   since: "2025"
   status: current
   affiliation:
@@ -61,7 +61,7 @@
       venue: "Res. Astron. Astrophys. (2026)"
       url: "https://doi.org/10.1088/1674-4527/aeae0c"
 
-- name: {en: "Xu-Dong Wang", zh: "王旭东"}
+- name: {en: "Xudong Wang", zh: "王旭东"}
   since: "2025"
   status: current
   affiliation:
@@ -71,7 +71,7 @@
     en: "Global-fit data analysis and machine learning for space-based gravitational-wave detectors."
     zh: "空间引力波探测的全局拟合与机器学习。"
 
-- name: {en: "Zhao-Ren Zhou", zh: "周照人"}
+- name: {en: "Zhaoren Zhou", zh: "周照人"}
   since: "2025"
   status: current
   affiliation:
@@ -91,7 +91,7 @@
     en: "Machine-learning waveform template modelling for gravitational waves."
     zh: "基于机器学习的引力波波形模板建模。"
 
-- name: {en: "Xiu-Bo Meng", zh: "蒙秀博"}
+- name: {en: "Xiubo Meng", zh: "蒙秀博"}
   since: "2025"
   status: current
   affiliation:
@@ -101,7 +101,7 @@
     en: "Diffusion-model denoising algorithms for gravitational-wave data."
     zh: "基于扩散模型的引力波降噪算法。"
 
-- name: {en: "Bao-Yun Zhao", zh: "赵保运"}
+- name: {en: "Baoyun Zhao", zh: "赵保运"}
   since: "2025"
   status: current
   affiliation:
@@ -129,7 +129,7 @@
       venue: "Mach. Learn.: Sci. Technol. 6, 035045 (2025)"
       url: "https://arxiv.org/abs/2505.20357"
 
-- name: {en: "Bo-Xuan Ge", zh: "葛伯宣"}
+- name: {en: "Boxuan Ge", zh: "葛伯宣"}
   since: "2025"
   status: current
   affiliation:

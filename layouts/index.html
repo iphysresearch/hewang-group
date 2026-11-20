@@ -20,7 +20,7 @@
         <article class="member{{ if eq .status "alumni" }} member--past{{ end }}">
           <div class="member__head">
             <span class="member__name">{{ partial "bi.html" (dict "v" .name "lang" $lang) }}</span>
-            <span class="member__since">{{ i18n "since_label" }} {{ .since }}{{ if eq .status "alumni" }} · {{ i18n "people_alumni" }}{{ end }}</span>
+            <span class="member__since">{{ if eq .status "alumni" }}{{ .since }} · {{ i18n "people_alumni" }}{{ else }}{{ i18n "since_label" }} {{ .since }}{{ end }}</span>
           </div>
           <p class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</p>
           <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
