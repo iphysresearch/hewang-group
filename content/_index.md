@@ -1,70 +1,60 @@
 ---
 title: He Wang's Group
 hero_title: "Gravitational waves, machine learning, and AI for science"
-hero_text: "We work at the intersection of gravitational-wave science and AI for Science — on how to detect signals, how to infer the physics behind them, and on what intelligent algorithms can and cannot do in that process."
-research_intro: "The work spans gravitational-wave science, machine learning, intelligent algorithms and scientific computing. Concrete topics include, but are not limited to:"
+hero_text: "We work at the intersection of gravitational-wave science and AI for Science: how to detect signals, what they tell us about the physics behind them, and what intelligent algorithms can and cannot do in that process."
+research_intro: "Four directions, from gravitational-wave data analysis to the methodology that serves it. Concrete topics include, but are not limited to:"
 research:
-  - title: Gravitational-wave science and physical modelling
+  - title: Gravitational-wave science
     items:
-      - Gravitational-wave data analysis
+      - Data analysis and signal detection
       - Multi-messenger data processing
-      - Numerical relativity and waveform modelling
-      - Numerical solution of partial differential equations
-      - Scientific simulation and physical modelling
-  - title: Artificial intelligence and scientific computing
+      - Waveform modelling and numerical relativity
+      - Detector noise and transient characterisation
+  - title: AI for science
     items:
-      - Machine learning on scientific data (AI for Science)
       - Deep learning for time-series signals
       - Generative models (flow and diffusion models)
-      - Physics-informed neural networks (PINN)
-      - Operator learning (DeepONet, neural operators)
-      - Simulation-based inference
-      - Probabilistic inference and Bayesian analysis
-  - title: New intelligent algorithms
+      - Physics-informed and operator-learning models (PINN, DeepONet)
+      - Simulation-based and Bayesian inference
+  - title: Intelligent algorithms and automation
     items:
-      - Large language models in research automation
-      - AI agents and automated research systems
+      - LLM agents for research workflows
+      - AutoML and automated design of scientific models
       - Evolutionary optimisation and heuristic search
-      - AutoML and automatic design of scientific models
-  - title: Scientific computing and engineering
+  - title: Scientific computing
     items:
       - Digital signal processing
-      - High-performance computing
-      - GPU parallel computing and scientific software
+      - High-performance and GPU computing
       - Scientific software engineering
   - title: Emerging directions
     items:
       - Quantum computing for scientific computation
       - Complex-system data analysis
-      - Quantitative analysis and scientific data modelling
 undergrad:
   label: "Undergraduate research programme"
   url: "https://github.com/iphysresearch/UndergradResearchLab/"
-  text: "The lab also runs an undergraduate training programme — the Taiji Lab initiative at UCAS — for students who want to start on real data before graduate school."
+  text: "We also run the Taiji Lab undergraduate programme at UCAS, for students who want to work on real data before graduate school."
 join_majors:
-  - Physics / Astronomy
-  - Computer science
-  - Software engineering
-  - Artificial intelligence
-  - Electronic and communication engineering
-  - Automation / control science
-  - Mathematics / applied mathematics / statistics
-  - Quantum information / quantum computing
-  - Data science
+  - Physics / astronomy
+  - Computer science / software engineering
+  - Mathematics / statistics
+  - Electronic information / automation
+  - AI / data science
 join_stages:
-  - Undergraduates (any year; second and third year preferred)
+  - Undergraduates (second and third year preferred)
   - Master's and PhD students
   - High-school students with strong programming
 join_skills:
-  - Solid mathematics: linear algebra, probability and statistics, calculus
-  - Python / Linux / scientific computing, or the willingness to learn them
-  - Ability to read English literature
+  - "Solid mathematics: linear algebra, probability, calculus"
+  - Python / Linux / scientific computing, or willing to learn
+  - Comfortable reading English papers
 join_commit:
-  - Continuous involvement in research training for the duration of the project
-  - At least half a day per week for remote discussion or study
-  - Time at UCAS during winter and summer breaks for hands-on work
-  - A research report or project summary at the end
-join_email: "wanghe@ucas.ac.cn"
+  - Regular research training for the duration of the project
+  - At least half a day a week for discussion or study
+  - A short report or project summary at the end
+join_email: "hewang@ucas.ac.cn"
 ---
 
 I am a Research Associate at [ICTP-AP](https://ictp-ap.org/), UCAS. The group is small: a handful of students and visitors, working on concrete datasets and questions that can be settled by a test.
+
+Longer notes, talks and papers live on my [personal site and blog](https://iphysresearch.github.io/blog/).

@@ -11,6 +11,8 @@ timeout: 300000
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 disableLanguages: []
+# A single-page site: no taxonomies, no paginated lists to index.
+disableKinds: [taxonomy, term]
 
 languages:
   en:
@@ -30,9 +32,6 @@ languages:
 
 pagination:
   pagerSize: 20
-
-taxonomies:
-  topic: topics
 
 permalinks:
   people: '/people/:slug/'

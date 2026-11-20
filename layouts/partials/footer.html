@@ -1,11 +1,5 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
     <span>© {{ now.Format "2006" }} {{ .Site.Title }}</span>
-    <span>
-      {{ with .Site.Home.RelPermalink }}<a href="{{ . }}">{{ i18n "home" }}</a>{{ end }}
-      {{ range .Site.Menus.main }}
-        {{ if ne .Name (i18n "home") }} · <a href="{{ if hasPrefix .URL "http" }}{{ .URL }}{{ else }}{{ .URL | relLangURL }}{{ end }}">{{ .Name }}</a>{{ end }}
-      {{ end }}
-    </span>
   </div>
 </footer>

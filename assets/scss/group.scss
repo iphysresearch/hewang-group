@@ -78,6 +78,7 @@ a:hover { color: var(--site-accent-hover); text-decoration: underline; }
 
 .hero-prose { max-width: var(--site-reading); color: var(--site-muted); font-size: 0.95rem; margin-top: 16px; }
 .hero-prose p { margin: 0; }
+.hero-prose p + p { margin-top: 10px; }
 
 /* ---------- sections ---------- */
 
