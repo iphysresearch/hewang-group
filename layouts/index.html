@@ -14,8 +14,7 @@
     <h2>{{ i18n "people" }}</h2>
     <p class="section__intro">{{ i18n "people_intro" }}</p>
 
-    {{/* Ordered by `since` in data/people.yaml — the file order is the display order. */}}
-    <div class="people-grid">
+    {{/* Ordered by `since` in data/people.yaml — the file order is the display order. */}}    <div class="people-grid">
       {{ range .Site.Data.people }}
         <article class="member{{ if eq .status "alumni" }} member--past{{ end }}">
           <div class="member__head">

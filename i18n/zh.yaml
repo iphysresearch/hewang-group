@@ -3,7 +3,7 @@ people: 成员
 research: 研究
 join: 加入我们
 
-people_intro: "组里的成员、访问学者与合作者，按入组时间排列。"
+people_intro: "组里的成员、访问学者与合作者，按入组时间倒序排列。"
 people_alumni: 已离开
 since_label: "入组"
 
