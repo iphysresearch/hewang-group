@@ -105,6 +105,33 @@
       venue: "Mach. Learn.: Sci. Technol. 6, 035045 (2025)"
       url: "https://arxiv.org/abs/2505.20357"
 
+- name: {en: "Ji-Yu Song", zh: "宋佶瑜"}
+  since: "2024"
+  status: current
+  affiliation:
+    en: "Northeastern University · PhD student (joint training)"
+    zh: "东北大学 · 在读博士生（联合培养）"
+  research:
+    en: "Machine learning for cosmology: standard sirens and robust inference for space-based detectors."
+    zh: "机器学习在宇宙学中的应用：标准汽笛与空间引力波探测的稳健推断。"
+  pubs:
+    - title: "Gravitational wave standard sirens: a brief review of cosmological parameter estimation"
+      venue: "Sci. China Phys. Mech. Astron. 69, 220401 (2026)"
+      url: "https://arxiv.org/abs/2507.12965"
+    - title: "Robust parameter inference for Taiji via time-frequency contrastive learning and normalizing flows"
+      venue: "arXiv:2604.13867"
+      url: "https://arxiv.org/abs/2604.13867"
+
+- name: {en: "Shuai Pu", zh: "蒲帅"}
+  since: "2024"
+  status: current
+  affiliation:
+    en: "Hangzhou Dianzi University · Undergraduate"
+    zh: "杭州电子科技大学 · 本科生"
+  research:
+    en: "Cosmology and machine learning."
+    zh: "宇宙学与机器学习。"
+
 - name: {en: "Tian-Yang Sun", zh: "孙天阳"}
   since: "2024"
   status: current
