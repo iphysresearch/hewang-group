@@ -1,0 +1,87 @@
+# Group members. Every text field may be a plain string or a {en, zh} map.
+# status: current | alumni   role: phd | master | undergrad | postdoc | visiting | joint
+
+- name: {en: "Yue Lin", zh: "林悦"}
+  role: phd
+  status: current
+  period: "2024.09 –"
+  affiliation: {en: "UCAS · ICTP-AP", zh: "中国科学院大学 · ICTP-AP"}
+  research:
+    en: "Machine-learning searches for signals in simulated space-based data, with an emphasis on false-alarm control and how learned searches transfer across waveform families."
+    zh: "空间引力波模拟数据中的机器学习信号搜索，关注虚警率控制，以及搜索方法在不同波形族之间的迁移能力。"
+  pubs:
+    - title: "Rapid searches in simulated LISA data with learned foreground models"
+      venue: "In preparation (2026)"
+  links:
+    - {name: GitHub, url: "https://github.com/"}
+
+- name: {en: "Haoran Chen", zh: "陈浩然"}
+  role: phd
+  status: current
+  period: "2023.09 –"
+  affiliation: {en: "UCAS · ICTP-AP", zh: "中国科学院大学 · ICTP-AP"}
+  research:
+    en: "Non-stationary noise in ground-based detectors and transformer-based denoising — including how much of a glitch-affected signal can actually be recovered."
+    zh: "地面探测器的非稳态噪声与基于 Transformer 的降噪，包括在存在毛刺时究竟能还原多少信号。"
+  pubs:
+    - title: "WaveFormer: transformer-based denoising for non-stationary detector noise"
+      venue: "Phys. Rev. D (submitted, 2026)"
+  links:
+    - {name: GitHub, url: "https://github.com/"}
+
+- name: {en: "Min Zhao", zh: "赵敏"}
+  role: master
+  status: current
+  period: "2025.09 –"
+  affiliation: {en: "UCAS", zh: "中国科学院大学"}
+  research:
+    en: "Simulation-based inference for massive black-hole binaries, comparing neural posterior estimation against conventional samplers on overlapping signals."
+    zh: "面向大质量双黑洞的模拟推断，在重叠信号场景下比较神经后验估计与传统采样器。"
+  pubs: []
+  links: []
+
+- name: {en: "Jiayi Wu", zh: "吴嘉怡"}
+  role: undergrad
+  status: current
+  period: "2026.03 –"
+  affiliation: {en: "Beijing Normal University", zh: "北京师范大学"}
+  research:
+    en: "Exploratory analysis and visualization tooling for gravitational-wave catalogues; the figures and interactive views used in group papers."
+    zh: "引力波事件目录的探索性分析与可视化工具，为课题组论文制作图表与交互视图。"
+  pubs: []
+  links: []
+
+- name: {en: "Peng Sun", zh: "孙鹏"}
+  role: visiting
+  status: current
+  period: "2026.10 – 2027.03"
+  affiliation: {en: "Lanzhou University", zh: "兰州大学"}
+  research:
+    en: "A six-month visit on LLM agents in research workflows: where they help, where they fail quietly, and how to make their output checkable."
+    zh: "为期六个月的访问，研究大模型智能体在科研流程中的使用：哪些环节有帮助、哪些会悄悄出错，以及如何让输出可检验。"
+  pubs: []
+  links: []
+
+- name: {en: "Wei Tan", zh: "谭伟"}
+  role: joint
+  status: current
+  period: "2025.09 –"
+  affiliation: {en: "Huazhong University of Science and Technology", zh: "华中科技大学"}
+  research:
+    en: "Global-fit techniques for space-based detectors, where thousands of overlapping signals have to be modelled at once."
+    zh: "空间探测器的全球拟合技术——需要在同一套模型中同时处理上千个重叠信号。"
+  pubs: []
+  links: []
+
+- name: {en: "Xinyi Li", zh: "李欣怡"}
+  role: phd
+  status: alumni
+  period: "2021.09 – 2026.06"
+  affiliation: {en: "UCAS · ICTP-AP", zh: "中国科学院大学 · ICTP-AP"}
+  research:
+    en: "Unsupervised anomaly detection as a model-independent way to search for signals no template covers. Now at a research institute in Shanghai."
+    zh: "无监督异常检测——用不依赖波形模板的方式搜索既有搜索覆盖不到的信号。现就职于上海某研究所。"
+  pubs:
+    - title: "Model-independent searches with unsupervised anomaly detection"
+      venue: "MNRAS (2025)"
+  links: []

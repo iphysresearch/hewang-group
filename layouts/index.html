@@ -1,76 +1,110 @@
 {{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+
 <section class="site-hero">
   <div class="wrap">
     <h1>{{ .Params.hero_title | default .Title }}</h1>
-    <p>{{ .Params.hero_text | default .Description }}</p>
+    <p class="lede">{{ .Params.hero_text }}</p>
+    {{ with .Content }}<div class="hero-prose">{{ . }}</div>{{ end }}
   </div>
 </section>
 
-{{ with .Content }}
-<section class="section">
-  <div class="wrap prose">{{ . }}</div>
-</section>
-{{ end }}
-
-{{ $people := where .Site.RegularPages "Section" "people" }}
-{{ if $people }}
 <section class="section" id="people">
   <div class="wrap">
-    <h2>{{ i18n "people_heading" }}</h2>
+    <h2>{{ i18n "people" }}</h2>
     <p class="section__intro">{{ i18n "people_intro" }}</p>
-    {{ range $group := slice "phd" "master" "undergrad" "postdoc" "visiting" "joint" }}
-      {{ $members := where (where $people "Params.role" $group) "Params.status" "current" }}
+
+    {{ $people := .Site.Data.people }}
+    {{ range $group := slice "postdoc" "phd" "master" "undergrad" "visiting" "joint" }}
+      {{ $members := where (where $people "role" $group) "status" "current" }}
       {{ with $members }}
         <div class="people-group">
           <h3>{{ i18n (printf "role_%s" $group) }}</h3>
-          <div class="people-grid">
-            {{ range . }}{{ partial "person-card.html" . }}{{ end }}
-          </div>
+          {{ range . }}
+            <article class="member">
+              <div class="member__head">
+                <span class="member__name">{{ partial "bi.html" (dict "v" .name "lang" $lang) }}</span>
+                <span class="member__sep">·</span>
+                <span class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</span>
+                {{ with .period }}<span class="member__sep">·</span><span class="member__period">{{ . }}</span>{{ end }}
+                {{ with .links }}
+                  {{ range . }}<a class="member__link" href="{{ .url }}">{{ .name }}</a>{{ end }}
+                {{ end }}
+              </div>
+              <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
+              {{ with .pubs }}
+                <ul class="member__pubs">
+                  {{ range . }}
+                    <li>
+                      <span class="pub-title">{{ .title }}</span>
+                      <span class="pub-meta">{{ with .venue }}{{ . }}{{ end }}{{ with .arxiv }} · <a href="https://arxiv.org/abs/{{ . }}">arXiv:{{ . }}</a>{{ end }}</span>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </article>
+          {{ end }}
         </div>
       {{ end }}
     {{ end }}
-    <p style="margin-top:32px"><a href="{{ "people/" | relLangURL }}">{{ i18n "all_people" }} →</a></p>
+
+    {{ $alumni := where $people "status" "alumni" }}
+    {{ with $alumni }}
+      <div class="people-group">
+        <h3>{{ i18n "people_past" }}</h3>
+        {{ range . }}
+          <article class="member member--past">
+            <div class="member__head">
+              <span class="member__name">{{ partial "bi.html" (dict "v" .name "lang" $lang) }}</span>
+              <span class="member__sep">·</span>
+              <span class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</span>
+              {{ with .period }}<span class="member__sep">·</span><span class="member__period">{{ . }}</span>{{ end }}
+            </div>
+            <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
+          </article>
+        {{ end }}
+      </div>
+    {{ end }}
   </div>
 </section>
-{{ end }}
 
-{{ with .Site.GetPage "/research" }}
-{{ with .Params.directions }}
 <section class="section" id="research">
   <div class="wrap">
-    <h2>{{ i18n "research_heading" }}</h2>
+    <h2>{{ i18n "research" }}</h2>
     <p class="section__intro">{{ i18n "research_intro" }}</p>
-    <div class="people-grid">
-      {{ range . }}
-        <div>
-          <p class="person-card__name">{{ .title }}</p>
-          <p class="person-card__affil">{{ .summary }}</p>
+    <div class="directions">
+      {{ range .Params.directions }}
+        <div class="direction">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
         </div>
       {{ end }}
     </div>
-    <p style="margin-top:32px"><a href="{{ "research/" | relLangURL }}">{{ i18n "all_research" }} →</a></p>
-  </div>
-</section>
-{{ end }}
-{{ end }}
 
-{{ with .Site.GetPage "/publications" }}
-{{ with .Params.featured }}
-<section class="section" id="publications">
-  <div class="wrap">
-    <h2>{{ i18n "papers_heading" }}</h2>
-    <p class="section__intro">{{ i18n "papers_intro" }}</p>
-    <ul class="pub-list">
-      {{ range . }}
-        <li>
-          <span class="pub-title">{{ .title }}</span>
-          <span class="pub-meta">{{ .authors }} · {{ .venue }}{{ with .arxiv }} · <a href="https://arxiv.org/abs/{{ . }}">arXiv:{{ . }}</a>{{ end }}</span>
-        </li>
-      {{ end }}
-    </ul>
-    <p style="margin-top:24px"><a href="{{ "publications/" | relLangURL }}">{{ i18n "all_papers" }} →</a></p>
+    {{ with .Params.papers }}
+      <h3 class="sub-head">{{ i18n "papers_heading" }}</h3>
+      <ul class="pub-list">
+        {{ range . }}
+          <li>
+            <span class="pub-title">{{ .title }}</span>
+            <span class="pub-meta">{{ .authors }} · {{ .venue }}{{ with .arxiv }} · <a href="https://arxiv.org/abs/{{ . }}">arXiv:{{ . }}</a>{{ end }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
   </div>
 </section>
-{{ end }}
-{{ end }}
+
+<section class="section" id="join">
+  <div class="wrap">
+    <h2>{{ i18n "join" }}</h2>
+    <div class="join">
+      <p>{{ i18n "join_text" }}</p>
+      <p>{{ i18n "join_write" }}</p>
+      {{ with .Params.join_email }}
+        <p class="join__email"><a href="mailto:{{ . }}">{{ . }}</a></p>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}

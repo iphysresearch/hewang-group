@@ -1,14 +1,10 @@
 home: Home
 people: People
 research: Research
-publications: Publications
 join: Join us
 
-people_heading: People
-people_intro: Students and visitors working with me on gravitational-wave data analysis, machine learning, and AI for science.
-people_current: Current members
+people_intro: "Students and visitors, with what each of them is working on."
 people_past: Past members and visitors
-all_people: All people
 
 role_postdoc: Postdoc
 role_phd: PhD student
@@ -16,14 +12,9 @@ role_master: Master's student
 role_undergrad: Undergraduate
 role_visiting: Visiting student
 role_joint: Joint training
-role_member: Member
 
-research_heading: Research
-research_intro: Four strands, all of them grounded in gravitational-wave observations.
-all_research: Research directions
-
+research_intro: "Four strands, all of them grounded in gravitational-wave observations."
 papers_heading: Selected publications
-papers_intro: Work from the group and its collaborations.
-all_papers: All publications
 
-join_heading: Join us
+join_text: "I am always happy to hear from students who want to work on gravitational-wave data analysis, machine learning, or AI for science. Most projects start with a dataset and a question that a test can settle."
+join_write: "Write with a short note on which direction draws you and what you have already tried — a course project, a reproduction, a notebook."
