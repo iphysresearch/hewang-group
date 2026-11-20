@@ -14,55 +14,29 @@
     <h2>{{ i18n "people" }}</h2>
     <p class="section__intro">{{ i18n "people_intro" }}</p>
 
-    {{ $people := .Site.Data.people }}
-    {{ range $group := slice "postdoc" "phd" "master" "undergrad" "visiting" "joint" }}
-      {{ $members := where (where $people "role" $group) "status" "current" }}
-      {{ with $members }}
-        <div class="people-group">
-          <h3>{{ i18n (printf "role_%s" $group) }}</h3>
-          {{ range . }}
-            <article class="member">
-              <div class="member__head">
-                <span class="member__name">{{ partial "bi.html" (dict "v" .name "lang" $lang) }}</span>
-                <span class="member__sep">·</span>
-                <span class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</span>
-                {{ with .period }}<span class="member__sep">·</span><span class="member__period">{{ . }}</span>{{ end }}
-                {{ with .links }}{{ range . }}<a class="member__link" href="{{ .url }}">{{ .name }}</a>{{ end }}{{ end }}
-              </div>
-              <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
-              {{ with .pubs }}
-                <ul class="member__pubs">
-                  {{ range . }}
-                    <li>
-                      <span class="pub-title">{{ .title }}</span>
-                      <span class="pub-meta">{{ with .venue }}{{ . }}{{ end }}{{ with .arxiv }} · <a href="https://arxiv.org/abs/{{ . }}">arXiv:{{ . }}</a>{{ end }}</span>
-                    </li>
-                  {{ end }}
-                </ul>
+    {{/* Ordered by `since` in data/people.yaml — the file order is the display order. */}}
+    <div class="people-grid">
+      {{ range .Site.Data.people }}
+        <article class="member{{ if eq .status "alumni" }} member--past{{ end }}">
+          <div class="member__head">
+            <span class="member__name">{{ partial "bi.html" (dict "v" .name "lang" $lang) }}</span>
+            <span class="member__since">{{ i18n "since_label" }} {{ .since }}{{ if eq .status "alumni" }} · {{ i18n "people_alumni" }}{{ end }}</span>
+          </div>
+          <p class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</p>
+          <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
+          {{ with .pubs }}
+            <ul class="member__pubs">
+              {{ range . }}
+                <li>
+                  {{ with .url }}<a href="{{ . }}">{{ end }}{{ .title }}{{ if .url }}</a>{{ end }}
+                  {{ with .venue }}<span class="pub-venue">{{ . }}</span>{{ end }}
+                </li>
               {{ end }}
-            </article>
+            </ul>
           {{ end }}
-        </div>
+        </article>
       {{ end }}
-    {{ end }}
-
-    {{ $alumni := where $people "status" "alumni" }}
-    {{ with $alumni }}
-      <div class="people-group">
-        <h3>{{ i18n "people_past" }}</h3>
-        {{ range . }}
-          <article class="member member--past">
-            <div class="member__head">
-              <span class="member__name">{{ partial "bi.html" (dict "v" .name "lang" $lang) }}</span>
-              <span class="member__sep">·</span>
-              <span class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</span>
-              {{ with .period }}<span class="member__sep">·</span><span class="member__period">{{ . }}</span>{{ end }}
-            </div>
-            <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
-          </article>
-        {{ end }}
-      </div>
-    {{ end }}
+    </div>
   </div>
 </section>
 

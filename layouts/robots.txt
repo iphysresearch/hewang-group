@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+{{ if .Sitemap }}Sitemap: {{ "sitemap.xml" | absURL }}{{ end }}

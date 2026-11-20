@@ -1,87 +1,140 @@
-# Group members. Every text field may be a plain string or a {en, zh} map.
-# status: current | alumni   role: phd | master | undergrad | postdoc | visiting | joint
+# Group members, visitors and collaborators.
+# The homepage renders this list in file order: keep it sorted by `since`,
+# oldest first. Every text field may be a plain string or a {en, zh} map.
+# status: current | alumni    since: the year (or range) they joined
 
-- name: {en: "Yue Lin", zh: "林悦"}
-  role: phd
+- name: {en: "Bo Liang", zh: "梁博"}
+  since: "2023"
   status: current
-  period: "2024.09 –"
-  affiliation: {en: "UCAS · ICTP-AP", zh: "中国科学院大学 · ICTP-AP"}
+  affiliation:
+    en: "Institute of Mechanics, CAS · PhD student (joint training)"
+    zh: "中科院力学所 · 在读博士生（联合培养）"
   research:
-    en: "Machine-learning searches for signals in simulated space-based data, with an emphasis on false-alarm control and how learned searches transfer across waveform families."
-    zh: "空间引力波模拟数据中的机器学习信号搜索，关注虚警率控制，以及搜索方法在不同波形族之间的迁移能力。"
+    en: "Simulation-based inference and normalizing flows for gravitational-wave parameter estimation."
+    zh: "基于模拟推断与归一化流的引力波参数估计。"
   pubs:
-    - title: "Rapid searches in simulated LISA data with learned foreground models"
-      venue: "In preparation (2026)"
-  links:
-    - {name: GitHub, url: "https://github.com/"}
+    - title: "Recent advances in simulation-based inference for gravitational-wave data analysis"
+      venue: "Astron. Tech. Instrum. (2025)"
+      url: "https://arxiv.org/abs/2507.11192"
+    - title: "Rapid parameter estimation for massive black-hole binaries with continuous normalizing flows"
+      venue: "Mach. Learn.: Sci. Technol. 5, 045040 (2024)"
+      url: "https://arxiv.org/abs/2407.07125"
 
-- name: {en: "Haoran Chen", zh: "陈浩然"}
-  role: phd
+- name: {en: "Tian-Yang Sun", zh: "孙天阳"}
+  since: "2024"
   status: current
-  period: "2023.09 –"
-  affiliation: {en: "UCAS · ICTP-AP", zh: "中国科学院大学 · ICTP-AP"}
+  affiliation:
+    en: "Northeastern University · PhD student (joint training)"
+    zh: "东北大学 · 在读博士生（联合培养）"
   research:
-    en: "Non-stationary noise in ground-based detectors and transformer-based denoising — including how much of a glitch-affected signal can actually be recovered."
-    zh: "地面探测器的非稳态噪声与基于 Transformer 的降噪，包括在存在毛刺时究竟能还原多少信号。"
+    en: "Machine learning for cosmology: 21-cm forest inference, dark-energy model selection, and Taiji parameter estimation."
+    zh: "机器学习在宇宙学中的应用：21 厘米森林推断、暗能量模型选择、太极参数估计。"
   pubs:
-    - title: "WaveFormer: transformer-based denoising for non-stationary detector noise"
-      venue: "Phys. Rev. D (submitted, 2026)"
-  links:
-    - {name: GitHub, url: "https://github.com/"}
+    - title: "Deep learning-driven likelihood-free parameter inference for 21-cm forest observations"
+      venue: "Commun. Phys. 8, 220 (2025)"
+      url: "https://arxiv.org/abs/2407.14298"
+    - title: "Consistency of the CPL dark-energy model with cosmological data"
+      venue: "arXiv:2610.31044"
+      url: "https://arxiv.org/abs/2610.31044"
 
-- name: {en: "Min Zhao", zh: "赵敏"}
-  role: master
+- name: {en: "Jian-Nan Zhang", zh: "张加楠"}
+  since: "2025"
   status: current
-  period: "2025.09 –"
-  affiliation: {en: "UCAS", zh: "中国科学院大学"}
+  affiliation:
+    en: "ICTP-AP · Master's student"
+    zh: "ICTP-AP · 在读硕士生"
   research:
-    en: "Simulation-based inference for massive black-hole binaries, comparing neural posterior estimation against conventional samplers on overlapping signals."
-    zh: "面向大质量双黑洞的模拟推断，在重叠信号场景下比较神经后验估计与传统采样器。"
-  pubs: []
-  links: []
+    en: "Galactic-binary foreground search for space-based detectors: global fit and machine-learning methods."
+    zh: "空间引力波探测中的银河系双星前景搜索：全局拟合与机器学习方法。"
 
-- name: {en: "Jiayi Wu", zh: "吴嘉怡"}
-  role: undergrad
+- name: {en: "Ding-Kai Zhang", zh: "张丁锴"}
+  since: "2025"
   status: current
-  period: "2026.03 –"
-  affiliation: {en: "Beijing Normal University", zh: "北京师范大学"}
+  affiliation:
+    en: "South China Normal University · Undergraduate (ICTP-AP MSc from 2027)"
+    zh: "华南师范大学 · 本科生（2027 年起在 ICTP-AP 读硕士）"
   research:
-    en: "Exploratory analysis and visualization tooling for gravitational-wave catalogues; the figures and interactive views used in group papers."
-    zh: "引力波事件目录的探索性分析与可视化工具，为课题组论文制作图表与交互视图。"
-  pubs: []
-  links: []
+    en: "Foreground noise modelling and machine learning for space-based gravitational-wave detection."
+    zh: "空间引力波探测的前景噪声建模与机器学习。"
+  pubs:
+    - title: "Learning instrumental noise profiles in signal-confusion scenarios"
+      venue: "Res. Astron. Astrophys. (2026)"
+      url: "https://doi.org/10.1088/1674-4527/aeae0c"
 
-- name: {en: "Peng Sun", zh: "孙鹏"}
-  role: visiting
+- name: {en: "Xu-Dong Wang", zh: "王旭东"}
+  since: "2025"
   status: current
-  period: "2026.10 – 2027.03"
-  affiliation: {en: "Lanzhou University", zh: "兰州大学"}
+  affiliation:
+    en: "ITP-CAS · Master's student"
+    zh: "中科院理论物理研究所 · 在读硕士生"
   research:
-    en: "A six-month visit on LLM agents in research workflows: where they help, where they fail quietly, and how to make their output checkable."
-    zh: "为期六个月的访问，研究大模型智能体在科研流程中的使用：哪些环节有帮助、哪些会悄悄出错，以及如何让输出可检验。"
-  pubs: []
-  links: []
+    en: "Global-fit data analysis and machine learning for space-based gravitational-wave detectors."
+    zh: "空间引力波探测的全局拟合与机器学习。"
 
-- name: {en: "Wei Tan", zh: "谭伟"}
-  role: joint
+- name: {en: "Zhao-Ren Zhou", zh: "周照人"}
+  since: "2025"
   status: current
-  period: "2025.09 –"
-  affiliation: {en: "Huazhong University of Science and Technology", zh: "华中科技大学"}
+  affiliation:
+    en: "Tianjin University of Science and Technology · Undergraduate"
+    zh: "天津科技大学 · 本科生"
   research:
-    en: "Global-fit techniques for space-based detectors, where thousands of overlapping signals have to be modelled at once."
-    zh: "空间探测器的全球拟合技术——需要在同一套模型中同时处理上千个重叠信号。"
-  pubs: []
-  links: []
+    en: "Gravitational-wave detection algorithms based on the fractional Fourier transform."
+    zh: "基于分数阶傅里叶变换的引力波探测算法。"
 
-- name: {en: "Xinyi Li", zh: "李欣怡"}
-  role: phd
+- name: {en: "Zun Wang", zh: "王尊"}
+  since: "2025"
+  status: current
+  affiliation:
+    en: "Beijing Normal University · PhD student (joint training)"
+    zh: "北京师范大学 · 博士生（联合培养）"
+  research:
+    en: "Machine-learning waveform template modelling for gravitational waves."
+    zh: "基于机器学习的引力波波形模板建模。"
+
+- name: {en: "Xiu-Bo Meng", zh: "蒙秀博"}
+  since: "2025"
+  status: current
+  affiliation:
+    en: "Changchun University of Science and Technology · Undergraduate"
+    zh: "长春理工大学 · 本科生"
+  research:
+    en: "Diffusion-model denoising algorithms for gravitational-wave data."
+    zh: "基于扩散模型的引力波降噪算法。"
+
+- name: {en: "Bao-Yun Zhao", zh: "赵保运"}
+  since: "2025"
+  status: current
+  affiliation:
+    en: "Northeastern University graduate; PhD at SJTU × Zhongguancun Academy from 2027"
+    zh: "东北大学本科毕业；2027 年起上海交通大学与中关村学院联合培养直博"
+  research:
+    en: "Evolutionary search for optimising large-language-model algorithms."
+    zh: "基于进化算法的大语言模型算法优化。"
+  pubs:
+    - title: "G-LNS: generative large neighborhood search for LLM-based automatic heuristic design"
+      venue: "arXiv:2602.08253"
+      url: "https://arxiv.org/abs/2602.08253"
+
+- name: {en: "Jun Tian", zh: "田军"}
+  since: "2025–2026"
   status: alumni
-  period: "2021.09 – 2026.06"
-  affiliation: {en: "UCAS · ICTP-AP", zh: "中国科学院大学 · ICTP-AP"}
+  affiliation:
+    en: "Formerly MSc, China West Normal University; now PhD at CQUPT"
+    zh: "原西华师范大学硕士生；现为重庆邮电大学博士生"
   research:
-    en: "Unsupervised anomaly detection as a model-independent way to search for signals no template covers. Now at a research institute in Shanghai."
-    zh: "无监督异常检测——用不依赖波形模板的方式搜索既有搜索覆盖不到的信号。现就职于上海某研究所。"
+    en: "Machine-learning signal detection algorithms for gravitational waves."
+    zh: "基于机器学习的引力波信号探测算法。"
   pubs:
-    - title: "Model-independent searches with unsupervised anomaly detection"
-      venue: "MNRAS (2025)"
-  links: []
+    - title: "Learning and interpreting gravitational-wave features from CNNs with a random forest"
+      venue: "Mach. Learn.: Sci. Technol. 6, 035045 (2025)"
+      url: "https://arxiv.org/abs/2505.20357"
+
+- name: {en: "Bo-Xuan Ge", zh: "葛伯宣"}
+  since: "2025"
+  status: current
+  affiliation:
+    en: "Hangzhou Institute for Advanced Study, UCAS · Postdoc"
+    zh: "中国科学院大学杭州高等研究院 · 在站博士后"
+  research:
+    en: "Numerical relativity combined with machine learning."
+    zh: "数值相对论与机器学习的交叉研究。"

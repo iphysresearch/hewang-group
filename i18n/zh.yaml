@@ -3,15 +3,9 @@ people: 成员
 research: 研究
 join: 加入我们
 
-people_intro: "组里的学生和访问学者，以及各自在做的事。"
-people_past: 已毕业与访问成员
-
-role_postdoc: 博士后
-role_phd: 博士研究生
-role_master: 硕士研究生
-role_undergrad: 本科生
-role_visiting: 短期访问
-role_joint: 联合培养
+people_intro: "组里的成员、访问学者与合作者，按入组时间排列。"
+people_alumni: 已离开
+since_label: "入组"
 
 join_text: "欢迎对引力波数据分析、机器学习或科学智能感兴趣的同学申请。特别欢迎编程能力强、学习主动性高、自驱力强的申请人。"
 join_majors_heading: 专业背景

@@ -3,15 +3,9 @@ people: People
 research: Research
 join: Join us
 
-people_intro: "Students and visitors, with what each of them is working on."
-people_past: Past members and visitors
-
-role_postdoc: Postdoc
-role_phd: PhD student
-role_master: Master's student
-role_undergrad: Undergraduate
-role_visiting: Visiting student
-role_joint: Joint training
+people_intro: "Members, visitors and collaborators, ordered by when they joined."
+people_alumni: alumni
+since_label: "since"
 
 join_text: "I welcome students who want to work on gravitational-wave data analysis, machine learning, or AI for science. Strong programmers and self-directed learners are especially welcome."
 join_majors_heading: Backgrounds
