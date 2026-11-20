@@ -18,6 +18,6 @@ clean:
 
 deploy:
 	@if [ -n "$$(git status --porcelain)" ]; then echo "uncommitted changes — commit first"; exit 1; fi
-	@git push origin master
-	@gh workflow run publish.yaml --ref master
+	@git push origin main
+	@gh workflow run publish.yaml --ref main
 	@echo "workflow triggered; watch: https://github.com/iphysresearch/hewang-group/actions"
