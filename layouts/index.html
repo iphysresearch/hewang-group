@@ -1,0 +1,76 @@
+{{ define "main" }}
+<section class="site-hero">
+  <div class="wrap">
+    <h1>{{ .Params.hero_title | default .Title }}</h1>
+    <p>{{ .Params.hero_text | default .Description }}</p>
+  </div>
+</section>
+
+{{ with .Content }}
+<section class="section">
+  <div class="wrap prose">{{ . }}</div>
+</section>
+{{ end }}
+
+{{ $people := where .Site.RegularPages "Section" "people" }}
+{{ if $people }}
+<section class="section" id="people">
+  <div class="wrap">
+    <h2>{{ i18n "people_heading" }}</h2>
+    <p class="section__intro">{{ i18n "people_intro" }}</p>
+    {{ range $group := slice "phd" "master" "undergrad" "postdoc" "visiting" "joint" }}
+      {{ $members := where (where $people "Params.role" $group) "Params.status" "current" }}
+      {{ with $members }}
+        <div class="people-group">
+          <h3>{{ i18n (printf "role_%s" $group) }}</h3>
+          <div class="people-grid">
+            {{ range . }}{{ partial "person-card.html" . }}{{ end }}
+          </div>
+        </div>
+      {{ end }}
+    {{ end }}
+    <p style="margin-top:32px"><a href="{{ "people/" | relLangURL }}">{{ i18n "all_people" }} →</a></p>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/research" }}
+{{ with .Params.directions }}
+<section class="section" id="research">
+  <div class="wrap">
+    <h2>{{ i18n "research_heading" }}</h2>
+    <p class="section__intro">{{ i18n "research_intro" }}</p>
+    <div class="people-grid">
+      {{ range . }}
+        <div>
+          <p class="person-card__name">{{ .title }}</p>
+          <p class="person-card__affil">{{ .summary }}</p>
+        </div>
+      {{ end }}
+    </div>
+    <p style="margin-top:32px"><a href="{{ "research/" | relLangURL }}">{{ i18n "all_research" }} →</a></p>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ with .Site.GetPage "/publications" }}
+{{ with .Params.featured }}
+<section class="section" id="publications">
+  <div class="wrap">
+    <h2>{{ i18n "papers_heading" }}</h2>
+    <p class="section__intro">{{ i18n "papers_intro" }}</p>
+    <ul class="pub-list">
+      {{ range . }}
+        <li>
+          <span class="pub-title">{{ .title }}</span>
+          <span class="pub-meta">{{ .authors }} · {{ .venue }}{{ with .arxiv }} · <a href="https://arxiv.org/abs/{{ . }}">arXiv:{{ . }}</a>{{ end }}</span>
+        </li>
+      {{ end }}
+    </ul>
+    <p style="margin-top:24px"><a href="{{ "publications/" | relLangURL }}">{{ i18n "all_papers" }} →</a></p>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

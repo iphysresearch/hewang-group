@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ $img := .Resources.GetMatch "avatar.*" }}
+<section class="person-header">
+  <div class="wrap" style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap">
+    {{ with $img }}
+      {{ $photo := .Fit "480x480" }}
+      <img class="person-header__photo" src="{{ $photo.RelPermalink }}" alt="{{ $.Title }}" width="160" height="160">
+    {{ end }}
+    <div>
+      <h1>{{ .Title }}</h1>
+      <p class="person-header__meta">
+        {{ with .Params.role_label }}{{ . }}{{ else }}{{ i18n (printf "role_%s" (.Params.role | default "member")) }}{{ end }}{{ with .Params.period }} · {{ . }}{{ end }}
+      </p>
+      {{ with .Params.affiliation }}<p class="person-header__meta">{{ . }}</p>{{ end }}
+      {{ with .Params.email }}<p class="person-header__meta"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+      {{ with .Params.links }}
+        <div class="person-links">
+          {{ range . }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    {{ .Content }}
+
+    {{ with .Params.publications }}
+      <h2>{{ i18n "papers_heading" }}</h2>
+      <ul class="pub-list">
+        {{ range . }}
+          <li>
+            <span class="pub-title">{{ .title }}</span>
+            <span class="pub-meta">{{ .authors }}{{ with .venue }} · {{ . }}{{ end }}{{ with .arxiv }} · <a href="https://arxiv.org/abs/{{ . }}">arXiv:{{ . }}</a>{{ end }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

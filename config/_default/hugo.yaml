@@ -1,0 +1,70 @@
+title: "He Wang's Group"
+baseURL: "https://iphysresearch.github.io/hewang-group/"
+hasCJKLanguage: true
+enableRobotsTXT: true
+enableGitInfo: false
+summaryLength: 30
+enableEmoji: true
+ignoreFiles: [\.ipynb$, \.ipynb_checkpoints$, _cache$]
+timeout: 300000
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+disableLanguages: []
+
+languages:
+  en:
+    languageName: English
+    languageCode: en-us
+    weight: 1
+    title: "He Wang's Group"
+    params:
+      description: "The research group of He Wang at ICTP-AP, UCAS: gravitational-wave data analysis, machine learning, and AI for scientific discovery."
+  zh:
+    languageName: 中文
+    languageCode: zh-hans
+    weight: 2
+    title: "王赫课题组"
+    params:
+      description: "王赫课题组（中国科学院大学国际理论物理中心亚太地区）：引力波数据分析、机器学习与科学智能。"
+
+pagination:
+  pagerSize: 20
+
+taxonomies:
+  topic: topics
+
+permalinks:
+  people: '/people/:slug/'
+  research: '/research/:slug/'
+
+outputs:
+  home: [HTML, RSS]
+  section: [HTML, RSS]
+
+imaging:
+  resampleFilter: lanczos
+  quality: 82
+  anchor: smart
+
+markup:
+  _merge: deep
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  appearance:
+    mode: system
+    color: blue
+    theme_day: custom
+    theme_night: custom
+    font: research
+  marketing:
+    seo:
+      site_type: ResearchOrganization
+      twitter: 'Herb_hewang'
+    verification:
+      google: ''
+      bing: ''

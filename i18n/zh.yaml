@@ -1,0 +1,29 @@
+home: 首页
+people: 成员
+research: 研究
+publications: 论文
+join: 加入我们
+
+people_heading: 课题组成员
+people_intro: 与我一起从事引力波数据分析、机器学习与科学智能研究的学生和访问学者。
+people_current: 现有成员
+people_past: 已毕业与访问成员
+all_people: 全部成员
+
+role_postdoc: 博士后
+role_phd: 博士研究生
+role_master: 硕士研究生
+role_undergrad: 本科生
+role_visiting: 短期访问
+role_joint: 联合培养
+role_member: 成员
+
+research_heading: 研究方向
+research_intro: 四个方向，都扎根于引力波的观测数据。
+all_research: 研究方向
+
+papers_heading: 代表性论文
+papers_intro: 课题组与合作者的工作。
+all_papers: 全部论文
+
+join_heading: 加入我们

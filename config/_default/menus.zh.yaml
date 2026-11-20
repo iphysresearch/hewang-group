@@ -1,0 +1,16 @@
+main:
+  - name: 首页
+    url: '/'
+    weight: 10
+  - name: 成员
+    url: '/people/'
+    weight: 20
+  - name: 研究
+    url: '/research/'
+    weight: 30
+  - name: 论文
+    url: '/publications/'
+    weight: 40
+  - name: 加入我们
+    url: '/join/'
+    weight: 50
