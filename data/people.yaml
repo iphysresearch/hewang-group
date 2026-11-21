@@ -27,16 +27,6 @@
       venue: "arXiv:2602.08253"
       url: "https://arxiv.org/abs/2602.08253"
 
-- name: {en: "Xiubo Meng", zh: "蒙秀博"}
-  since: "2025"
-  status: current
-  affiliation:
-    en: "Changchun University of Science and Technology · Undergraduate"
-    zh: "长春理工大学 · 本科生"
-  research:
-    en: "Diffusion-model denoising algorithms for gravitational-wave data."
-    zh: "基于扩散模型的引力波降噪算法。"
-
 - name: {en: "Zun Wang", zh: "王尊"}
   since: "2025"
   status: current
@@ -90,6 +80,16 @@
   research:
     en: "Galactic-binary foreground search for space-based detectors: global fit and machine-learning methods."
     zh: "空间引力波探测中的银河系双星前景搜索：全局拟合与机器学习方法。"
+
+- name: {en: "Xiubo Meng", zh: "蒙秀博"}
+  since: "2025"
+  status: current
+  affiliation:
+    en: "Changchun University of Science and Technology · Undergraduate"
+    zh: "长春理工大学 · 本科生"
+  research:
+    en: "Diffusion-model denoising algorithms for gravitational-wave data."
+    zh: "基于扩散模型的引力波降噪算法。"
 
 - name: {en: "Jun Tian", zh: "田军"}
   since: "2024–2025"
