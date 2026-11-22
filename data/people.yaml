@@ -28,11 +28,14 @@
     zh: "数值相对论与机器学习的交叉研究。"
 
 - name: {en: "Baoyun Zhao", zh: "赵保运"}
-  since: "2025"
-  status: current
+  since: "2025–2026"
+  status: alumni
   affiliation:
-    en: "Northeastern University graduate; PhD at SJTU × Zhongguancun Academy from 2027"
-    zh: "东北大学本科毕业；2027 年起上海交通大学与中关村学院联合培养直博"
+    en: "Formerly undergraduate, Northeastern University"
+    zh: "原东北大学本科生"
+  now:
+    en: "Direct PhD at SJTU × Zhongguancun Academy from 2027"
+    zh: "2027 年起上海交通大学与中关村学院联合培养直博"
   research:
     en: "Evolutionary search for optimising large-language-model algorithms."
     zh: "基于进化算法的大语言模型算法优化。"
