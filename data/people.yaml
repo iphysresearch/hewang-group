@@ -190,12 +190,9 @@
     en: "Institute of Mechanics, CAS · Associate Professor"
     zh: "中科院力学所 · 副研究员"
   research:
-    en: "A close collaborator since his postdoc here: Taiji detection pipelines, global fit, and rapid parameter estimation for space-based detectors."
-    zh: "自在我组做博士后起即密切合作：太极探测流程、全局拟合与空间引力波探测的快速参数估计。"
+    en: "A close collaborator on Taiji data analysis: detection pipelines, global fit, and rapid parameter estimation for space-based detectors."
+    zh: "太极数据分析方面的密切合作者：探测流程、全局拟合与空间引力波探测的快速参数估计。"
   pubs:
-    - title: "Towards realistic detection pipelines of Taiji: new challenges in data analysis and high-fidelity simulations"
-      venue: "Sci. China Phys. Mech. Astron. 69, 249501 (2026)"
-      url: "https://arxiv.org/abs/2505.16500"
     - title: "Advancing space-based gravitational wave astronomy: rapid parameter estimation via normalizing flows"
       venue: "Sci. China Phys. Mech. Astron. 67, 230412 (2024)"
       url: "https://arxiv.org/abs/2308.05510"
