@@ -37,8 +37,8 @@
     en: "Direct PhD at SJTU × Zhongguancun Academy from 2027"
     zh: "2027 年起上海交通大学与中关村学院联合培养直博"
   research:
-    en: "Evolutionary search for optimising large-language-model algorithms."
-    zh: "基于进化算法的大语言模型算法优化。"
+    en: "Evolutionary algorithms and LLM-based algorithm optimisation."
+    zh: "进化算法与基于大语言模型的算法优化。"
   pubs:
     - title: "G-LNS: generative large neighborhood search for LLM-based automatic heuristic design"
       venue: "arXiv:2602.08253"
