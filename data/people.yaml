@@ -3,6 +3,20 @@
 # `since`, newest first. Every text field may be a plain string or a {en, zh} map.
 # status: current | alumni    since: the year (or range) they joined
 
+- name: {en: "Hong Su", zh: "苏鸿"}
+  since: "2026"
+  status: current
+  affiliation:
+    en: "Wuhan University · PhD student (joint training)"
+    zh: "武汉大学 · 在读博士生（联合培养）"
+  research:
+    en: "Multiparameter tests of general relativity with neural posterior estimation."
+    zh: "基于神经后验估计的广义相对论多参数检验。"
+  pubs:
+    - title: "Rapid multiparameter gravitational-wave tests of general relativity with neural posterior estimation"
+      venue: "arXiv:2611.17038"
+      url: "https://arxiv.org/abs/2611.17038"
+
 - name: {en: "Boxuan Ge", zh: "葛伯宣"}
   since: "2025"
   status: current
