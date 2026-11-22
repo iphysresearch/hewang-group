@@ -183,6 +183,26 @@
       venue: "Mach. Learn.: Sci. Technol. 5, 045040 (2024)"
       url: "https://arxiv.org/abs/2407.07125"
 
+- name: {en: "Minghui Du", zh: "杜明辉"}
+  since: "2023"
+  status: current
+  affiliation:
+    en: "Institute of Mechanics, CAS · Associate Professor"
+    zh: "中科院力学所 · 副研究员"
+  research:
+    en: "A close collaborator since his postdoc here: Taiji detection pipelines, global fit, and rapid parameter estimation for space-based detectors."
+    zh: "自在我组做博士后起即密切合作：太极探测流程、全局拟合与空间引力波探测的快速参数估计。"
+  pubs:
+    - title: "Towards realistic detection pipelines of Taiji: new challenges in data analysis and high-fidelity simulations"
+      venue: "Sci. China Phys. Mech. Astron. 69, 249501 (2026)"
+      url: "https://arxiv.org/abs/2505.16500"
+    - title: "Advancing space-based gravitational wave astronomy: rapid parameter estimation via normalizing flows"
+      venue: "Sci. China Phys. Mech. Astron. 67, 230412 (2024)"
+      url: "https://arxiv.org/abs/2308.05510"
+    - title: "Challenges in space-based gravitational wave data analysis and applications of artificial intelligence"
+      venue: "Sci. Sin. Phys. Mech. Astron. 54, 270403 (2024)"
+      url: "https://doi.org/10.1360/SSPMA-2024-0087"
+
 - name: {en: "Hui Sun", zh: "孙慧"}
   since: "2023–2025"
   status: alumni
