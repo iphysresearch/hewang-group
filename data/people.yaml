@@ -179,3 +179,17 @@
     - title: "Rapid parameter estimation for massive black-hole binaries with continuous normalizing flows"
       venue: "Mach. Learn.: Sci. Technol. 5, 045040 (2024)"
       url: "https://arxiv.org/abs/2407.07125"
+
+- name: {en: "Hui Sun", zh: "孙慧"}
+  since: "2023–2025"
+  status: alumni
+  affiliation:
+    en: "Formerly MSc, ICTP-AP; continuing to a PhD there"
+    zh: "原 ICTP-AP 硕士生；现继续在 ICTP-AP 读博"
+  research:
+    en: "Machine-learning priors to accelerate Bayesian sampling for massive black-hole binaries."
+    zh: "利用机器学习先验加速大质量双黑洞的贝叶斯采样。"
+  pubs:
+    - title: "Accelerating Bayesian sampling for massive black hole binaries with prior constraints from conditional variational autoencoders"
+      venue: "Phys. Rev. D 111, 103053 (2025)"
+      url: "https://arxiv.org/abs/2502.09266"
