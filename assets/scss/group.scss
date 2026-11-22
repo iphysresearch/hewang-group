@@ -112,6 +112,13 @@ a:hover { color: var(--site-accent-hover); text-decoration: underline; }
 
 .member__affil { margin: 2px 0 0; color: var(--site-muted); font-size: 0.8rem; line-height: 1.45; }
 
+/* Where an alumni went next. Labelled so it reads as a status, not a second address. */
+.member__now { margin: 3px 0 0; font-size: 0.8rem; line-height: 1.45; }
+.member__now-label {
+  color: var(--site-muted); font-size: 0.72rem;
+  text-transform: uppercase; letter-spacing: 0.06em; margin-right: 2px;
+}
+
 .member__research {
   margin: 6px 0 0; color: var(--site-ink); font-size: 0.88rem;
   line-height: 1.5;

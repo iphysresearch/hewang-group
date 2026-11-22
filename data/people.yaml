@@ -109,8 +109,11 @@
   since: "2024–2025"
   status: alumni
   affiliation:
-    en: "Formerly MSc, China West Normal University; now PhD at CQUPT"
-    zh: "原西华师范大学硕士生；现为重庆邮电大学博士生"
+    en: "Formerly MSc, China West Normal University"
+    zh: "原西华师范大学硕士生"
+  now:
+    en: "PhD student at CQUPT"
+    zh: "在重庆邮电大学读博"
   research:
     en: "Machine-learning signal detection algorithms for gravitational waves."
     zh: "基于机器学习的引力波信号探测算法。"
@@ -184,8 +187,11 @@
   since: "2023–2025"
   status: alumni
   affiliation:
-    en: "Formerly MSc, ICTP-AP; continuing to a PhD there"
-    zh: "原 ICTP-AP 硕士生；现继续在 ICTP-AP 读博"
+    en: "Formerly MSc, ICTP-AP"
+    zh: "原 ICTP-AP 硕士生"
+  now:
+    en: "PhD student at ICTP-AP"
+    zh: "继续在 ICTP-AP 读博"
   research:
     en: "Machine-learning priors to accelerate Bayesian sampling for massive black-hole binaries."
     zh: "利用机器学习先验加速大质量双黑洞的贝叶斯采样。"

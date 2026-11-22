@@ -6,6 +6,7 @@ join: Join us
 people_intro: "Members, visitors and collaborators, newest first."
 people_alumni: alumni
 since_label: "since"
+now_label: "Now:"
 
 join_text: "I welcome students who want to work on gravitational-wave data analysis, machine learning, or AI for science. Strong programmers and self-directed learners are especially welcome."
 join_majors_heading: Backgrounds

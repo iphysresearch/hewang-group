@@ -14,7 +14,8 @@
     <h2>{{ i18n "people" }}</h2>
     <p class="section__intro">{{ i18n "people_intro" }}</p>
 
-    {{/* Ordered by `since` in data/people.yaml — the file order is the display order. */}}    <div class="people-grid">
+    {{/* Ordered by `since` in data/people.yaml — the file order is the display order. */}}
+    <div class="people-grid">
       {{ range .Site.Data.people }}
         <article class="member{{ if eq .status "alumni" }} member--past{{ end }}">
           <div class="member__head">
@@ -22,6 +23,7 @@
             <span class="member__since">{{ if eq .status "alumni" }}{{ .since }} · {{ i18n "people_alumni" }}{{ else }}{{ i18n "since_label" }} {{ .since }}{{ end }}</span>
           </div>
           <p class="member__affil">{{ partial "bi.html" (dict "v" .affiliation "lang" $lang) }}</p>
+          {{ with .now }}<p class="member__now"><span class="member__now-label">{{ i18n "now_label" }}</span> {{ partial "bi.html" (dict "v" . "lang" $lang) }}</p>{{ end }}
           <p class="member__research">{{ partial "bi.html" (dict "v" .research "lang" $lang) }}</p>
           {{ with .pubs }}
             <ul class="member__pubs">
