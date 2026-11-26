@@ -170,11 +170,11 @@
       url: "https://arxiv.org/abs/2610.31044"
 
 - name: {en: "Bo Liang", zh: "梁博"}
-  since: "2023"
-  status: current
+  since: "2023–2025"
+  status: alumni
   affiliation:
-    en: "Institute of Mechanics, CAS · PhD student (joint training)"
-    zh: "中科院力学所 · 在读博士生（联合培养）"
+    en: "Formerly PhD student (joint training), Institute of Mechanics, CAS"
+    zh: "原中科院力学所博士生（联合培养）"
   research:
     en: "Simulation-based inference and normalizing flows for gravitational-wave parameter estimation."
     zh: "基于模拟推断与归一化流的引力波参数估计。"
